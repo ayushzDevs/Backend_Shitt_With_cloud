@@ -17,7 +17,9 @@
   "homepage": "https://github.com/ayushzDevs/Backend_Shitt_With_cloud#readme",
   "description": "",
   "dependencies": {
+    "@imagekit/nodejs": "^7.6.2",
     "express": "^5.2.1",
-    "mongoose": "^9.6.2"
+    "mongoose": "^9.6.2",
+    "multer": "^2.1.1"
   }
 }
