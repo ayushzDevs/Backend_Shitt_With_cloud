@@ -4,7 +4,7 @@ const app = express();
 const wrapAsync = require("../utils/wrapAsync")
 const multer = require("multer")
 const uploadfile = require("./services/storage.service")
-
+require("dotenv").config();
 
 
 

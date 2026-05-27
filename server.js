@@ -3,6 +3,8 @@ const { connect } = require('mongoose');
 const app = require('./src/app');
 const port = 3000;
 
+require("dotenv").config();
+
 const connectDB = require("./src/db/db")
 
 connectDB();

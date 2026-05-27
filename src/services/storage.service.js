@@ -1,8 +1,10 @@
 const ImageKit = require("@imagekit/nodejs");
 const { clientEncryption } = require("../models/post.model");
+require("dotenv").config();
+
 
 const imagekit = new ImageKit({
-    privateKey: "private_+/O/dII1cpJ0bnttPSje355JyJ0="
+    privateKey: process.env.IMAGE_PRIVATE_KEY,
 });
 
 
