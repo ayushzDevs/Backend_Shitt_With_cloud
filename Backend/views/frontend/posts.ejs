@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetched post</title>
+</head>
+<body>
+
+    <h1>Fetched post</h1>
+    <% if (!posts || posts.length === 0) { %>
+        <p>No posts yet.</p>
+    <% } else { %>
+        <ul>
+            <% posts.forEach((post) => { %>
+                <li>
+                    <img src="<%= post.image %>" alt="post image" style="max-width: 300px;">
+                    <p><%= post.caption %></p>
+                </li>
+            <% }) %>
+        </ul>
+    <% } %>
+    
+</body>
+</html>
