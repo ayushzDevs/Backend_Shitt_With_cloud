@@ -7,7 +7,7 @@ function CreatePost() {
 
         <form >
             <input type="file" name='image' accept='image/*'/>
-            <input type="text" name='caption' required />
+            <input type="text" name='caption' placeholder='enter caption' required />
             <button type='submit'> Submit</button>
         </form>
 
